@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    ding('我就是我, xxx 是不一样的烟火');
+    return view('welcome');
 });
 
 Route::get('/t', function () {
-
+    ding()->at(["15517515025"],true)
+        ->text("我就是我,@15517515025 是不一样的烟火");
 });
