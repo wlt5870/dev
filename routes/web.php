@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    ding('我就是我, xxx 是不一样的烟火');
 });
 
 Route::get('/t', function () {
-    ding('我就是我, xxx 是不一样的烟火');
+
 });
