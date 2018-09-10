@@ -20,7 +20,7 @@ return [
     ],
 
     'ses' => [
-        'key' => env('SES_KEY'),
+        'key'    => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
     ],
@@ -30,9 +30,14 @@ return [
     ],
 
     'stripe' => [
-        'model' => App\User::class,
-        'key' => env('STRIPE_KEY'),
+        'model'  => App\User::class,
+        'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'weixin' => [
+        'client_id'     => env('WEIXIN_KEY', null),
+        'client_secret' => env('WEIXIN_SECRET', null),
+        'redirect'      => env('WEIXIN_REDIRECT_URI', null),
+        //这一行配置非常重要，必须要写成这个地址。 'auth_base_uri' => 'https://open.weixin.qq.com/connect/qrconnect',],
+    ],
 ];

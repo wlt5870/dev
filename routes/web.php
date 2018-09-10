@@ -34,3 +34,7 @@ Route::get('/t', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group([ 'namespace' => 'OtherLogin' ], function () {
+    Route::get('/qq-login', 'LoginController@login')->name('qq-login');
+});
