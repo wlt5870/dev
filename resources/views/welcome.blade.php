@@ -79,7 +79,6 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    welcome
                 </div>
 
                 <div class="links">

@@ -27,17 +27,19 @@
     23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     24 => 'Folklore\\GraphQL\\ServiceProvider',
     25 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
-    26 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    27 => 'Carbon\\Laravel\\ServiceProvider',
-    28 => 'DingNotice\\DingNoticeServiceProvider',
-    29 => 'App\\Providers\\AppServiceProvider',
-    30 => 'App\\Providers\\AuthServiceProvider',
-    31 => 'App\\Providers\\EventServiceProvider',
-    32 => 'App\\Providers\\RouteServiceProvider',
-    33 => 'Bugsnag\\BugsnagLaravel\\BugsnagLaravelServiceProvider',
-    34 => 'Folklore\\GraphQL\\ServiceProvider',
-    35 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
-    36 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    26 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    27 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    28 => 'Carbon\\Laravel\\ServiceProvider',
+    29 => 'SocialiteProviders\\Manager\\ServiceProvider',
+    30 => 'DingNotice\\DingNoticeServiceProvider',
+    31 => 'App\\Providers\\AppServiceProvider',
+    32 => 'App\\Providers\\AuthServiceProvider',
+    33 => 'App\\Providers\\EventServiceProvider',
+    34 => 'App\\Providers\\RouteServiceProvider',
+    35 => 'Bugsnag\\BugsnagLaravel\\BugsnagLaravelServiceProvider',
+    36 => 'Folklore\\GraphQL\\ServiceProvider',
+    37 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
+    38 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
   ),
   'eager' => 
   array (
@@ -164,6 +166,7 @@
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.ide-helper.generate' => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     'command.ide-helper.models' => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    'Laravel\\Socialite\\Contracts\\Factory' => 'SocialiteProviders\\Manager\\ServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
   ),
   'when' => 
@@ -207,7 +210,13 @@
     'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider' => 
     array (
     ),
+    'Laravel\\Socialite\\SocialiteServiceProvider' => 
+    array (
+    ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'SocialiteProviders\\Manager\\ServiceProvider' => 
     array (
     ),
   ),

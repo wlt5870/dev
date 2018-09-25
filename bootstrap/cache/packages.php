@@ -35,6 +35,17 @@
       'Clockwork' => 'Clockwork\\Support\\Laravel\\Facade',
     ),
   ),
+  'laravel/socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
@@ -47,6 +58,13 @@
     'providers' => 
     array (
       0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
+  'socialiteproviders/manager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'SocialiteProviders\\Manager\\ServiceProvider',
     ),
   ),
   'wangju/ding-notice' => 
