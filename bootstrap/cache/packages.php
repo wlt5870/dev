@@ -53,6 +53,13 @@
       0 => 'Encore\\Admin\\Helpers\\HelpersServiceProvider',
     ),
   ),
+  'laravel-admin-ext/log-viewer' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
+    ),
+  ),
   'laravel/socialite' => 
   array (
     'providers' => 
