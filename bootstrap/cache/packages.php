@@ -6,6 +6,17 @@
       0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     ),
   ),
+  'encore/laravel-admin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Encore\\Admin\\AdminServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Admin' => 'Encore\\Admin\\Facades\\Admin',
+    ),
+  ),
   'fideloper/proxy' => 
   array (
     'providers' => 
@@ -33,6 +44,13 @@
     'aliases' => 
     array (
       'Clockwork' => 'Clockwork\\Support\\Laravel\\Facade',
+    ),
+  ),
+  'laravel-admin-ext/helpers' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Encore\\Admin\\Helpers\\HelpersServiceProvider',
     ),
   ),
   'laravel/socialite' => 
