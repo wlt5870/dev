@@ -18,6 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/t', function () {
+    Cache::add('key1', 90, 56);
+    dd(Cache::has('key1'));
+    exit;
     //clock()->startEvent('event_name', 'LaravelAcademy.org');
     //ding()->at(["15517515025"],true)
     //    ->text("我就是我,@15517515025 是不一样的烟火");
