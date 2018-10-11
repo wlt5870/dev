@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.5.43 on 2018-09-05 06:14:50.
+ * Generated for Laravel 5.5.43 on 2018-10-11 11:05:09.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -12988,6 +12988,869 @@ namespace Illuminate\Support\Facades {
  
 }
 
+namespace Folklore\GraphQL\Support\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class GraphQL {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function schema($schema = null)
+        {
+            return \Folklore\GraphQL\GraphQL::schema($schema);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function type($name, $fresh = false)
+        {
+            return \Folklore\GraphQL\GraphQL::type($name, $fresh);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function objectType($type, $opts = array())
+        {
+            return \Folklore\GraphQL\GraphQL::objectType($type, $opts);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function query($query, $variables = array(), $opts = array())
+        {
+            return \Folklore\GraphQL\GraphQL::query($query, $variables, $opts);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function queryAndReturnResult($query, $variables = array(), $opts = array())
+        {
+            return \Folklore\GraphQL\GraphQL::queryAndReturnResult($query, $variables, $opts);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addTypes($types)
+        {
+            return \Folklore\GraphQL\GraphQL::addTypes($types);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addType($class, $name = null)
+        {
+            return \Folklore\GraphQL\GraphQL::addType($class, $name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addSchema($name, $schema)
+        {
+            return \Folklore\GraphQL\GraphQL::addSchema($name, $schema);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function clearType($name)
+        {
+            return \Folklore\GraphQL\GraphQL::clearType($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function clearSchema($name)
+        {
+            return \Folklore\GraphQL\GraphQL::clearSchema($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function clearTypes()
+        {
+            return \Folklore\GraphQL\GraphQL::clearTypes();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function clearSchemas()
+        {
+            return \Folklore\GraphQL\GraphQL::clearSchemas();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getTypes()
+        {
+            return \Folklore\GraphQL\GraphQL::getTypes();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getSchemas()
+        {
+            return \Folklore\GraphQL\GraphQL::getSchemas();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function formatError($e)
+        {
+            return \Folklore\GraphQL\GraphQL::formatError($e);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function pagination($type)
+        {
+            return \Folklore\GraphQL\GraphQL::pagination($type);
+        }
+         
+    }
+ 
+}
+
+namespace Clockwork\Support\Laravel { 
+
+    /**
+     * 
+     *
+     */ 
+    class Facade {
+        
+        /**
+         * Add a new data source
+         *
+         * @static 
+         */ 
+        public static function addDataSource($dataSource)
+        {
+            return \Clockwork\Clockwork::addDataSource($dataSource);
+        }
+        
+        /**
+         * Return array of all added data sources
+         *
+         * @static 
+         */ 
+        public static function getDataSources()
+        {
+            return \Clockwork\Clockwork::getDataSources();
+        }
+        
+        /**
+         * Return the request object
+         *
+         * @static 
+         */ 
+        public static function getRequest()
+        {
+            return \Clockwork\Clockwork::getRequest();
+        }
+        
+        /**
+         * Set a custom request object
+         *
+         * @static 
+         */ 
+        public static function setRequest($request)
+        {
+            return \Clockwork\Clockwork::setRequest($request);
+        }
+        
+        /**
+         * Add data from all data sources to request
+         *
+         * @static 
+         */ 
+        public static function resolveRequest()
+        {
+            return \Clockwork\Clockwork::resolveRequest();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function extendRequest($request = null)
+        {
+            return \Clockwork\Clockwork::extendRequest($request);
+        }
+        
+        /**
+         * Store request via storage object
+         *
+         * @static 
+         */ 
+        public static function storeRequest()
+        {
+            return \Clockwork\Clockwork::storeRequest();
+        }
+        
+        /**
+         * Return the storage object
+         *
+         * @static 
+         */ 
+        public static function getStorage()
+        {
+            return \Clockwork\Clockwork::getStorage();
+        }
+        
+        /**
+         * Set a custom storage object
+         *
+         * @static 
+         */ 
+        public static function setStorage($storage)
+        {
+            return \Clockwork\Clockwork::setStorage($storage);
+        }
+        
+        /**
+         * Return the authenticator object
+         *
+         * @static 
+         */ 
+        public static function getAuthenticator()
+        {
+            return \Clockwork\Clockwork::getAuthenticator();
+        }
+        
+        /**
+         * Set a custom authenticator object
+         *
+         * @static 
+         */ 
+        public static function setAuthenticator($authenticator)
+        {
+            return \Clockwork\Clockwork::setAuthenticator($authenticator);
+        }
+        
+        /**
+         * Return the log instance
+         *
+         * @static 
+         */ 
+        public static function getLog()
+        {
+            return \Clockwork\Clockwork::getLog();
+        }
+        
+        /**
+         * Set a custom log instance
+         *
+         * @static 
+         */ 
+        public static function setLog($log)
+        {
+            return \Clockwork\Clockwork::setLog($log);
+        }
+        
+        /**
+         * Return the timeline instance
+         *
+         * @static 
+         */ 
+        public static function getTimeline()
+        {
+            return \Clockwork\Clockwork::getTimeline();
+        }
+        
+        /**
+         * Set a custom timeline instance
+         *
+         * @static 
+         */ 
+        public static function setTimeline($timeline)
+        {
+            return \Clockwork\Clockwork::setTimeline($timeline);
+        }
+        
+        /**
+         * Shortcut methods for the current log instance
+         *
+         * @static 
+         */ 
+        public static function log($level, $message, $context = array())
+        {
+            return \Clockwork\Clockwork::log($level, $message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function emergency($message, $context = array())
+        {
+            return \Clockwork\Clockwork::emergency($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function alert($message, $context = array())
+        {
+            return \Clockwork\Clockwork::alert($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function critical($message, $context = array())
+        {
+            return \Clockwork\Clockwork::critical($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function error($message, $context = array())
+        {
+            return \Clockwork\Clockwork::error($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function warning($message, $context = array())
+        {
+            return \Clockwork\Clockwork::warning($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function notice($message, $context = array())
+        {
+            return \Clockwork\Clockwork::notice($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function info($message, $context = array())
+        {
+            return \Clockwork\Clockwork::info($message, $context);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function debug($message, $context = array())
+        {
+            return \Clockwork\Clockwork::debug($message, $context);
+        }
+        
+        /**
+         * Shortcut methods for the current timeline instance
+         *
+         * @static 
+         */ 
+        public static function startEvent($name, $description, $time = null)
+        {
+            return \Clockwork\Clockwork::startEvent($name, $description, $time);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function endEvent($name)
+        {
+            return \Clockwork\Clockwork::endEvent($name);
+        }
+        
+        /**
+         * Shortcut methods for recording subrequests
+         *
+         * @static 
+         */ 
+        public static function subrequest($url, $id, $path = null)
+        {
+            return \Clockwork\Clockwork::subrequest($url, $id, $path);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function userData($key = null)
+        {
+            return \Clockwork\Clockwork::userData($key);
+        }
+         
+    }
+ 
+}
+
+namespace Encore\Admin\Facades { 
+
+    /**
+     * Class Admin.
+     *
+     * @method static \Encore\Admin\Grid grid($model, \Closure $callable)
+     * @method static \Encore\Admin\Form form($model, \Closure $callable)
+     * @method static \Encore\Admin\Show show($model, $callable = null)
+     * @method static \Encore\Admin\Tree tree($model, \Closure $callable = null)
+     * @method static \Encore\Admin\Layout\Content content(\Closure $callable = null)
+     * @method static \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void css($css = null)
+     * @method static \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void js($js = null)
+     * @method static \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void script($script = '')
+     * @method static \Illuminate\Contracts\Auth\Authenticatable|null user()
+     * @method static string title()
+     * @method static void navbar(\Closure $builder = null)
+     * @method static void registerAuthRoutes()
+     * @method static void extend($name, $class)
+     * @method static void disablePjax()
+     */ 
+    class Admin {
+        
+        /**
+         * Returns the long version of Laravel-admin.
+         *
+         * @return string The long application version
+         * @static 
+         */ 
+        public static function getLongVersion()
+        {
+            return \Encore\Admin\Admin::getLongVersion();
+        }
+        
+        /**
+         * 
+         *
+         * @param $model
+         * @param \Closure $callable
+         * @return \Encore\Admin\Grid 
+         * @deprecated since v1.6.1
+         * @static 
+         */ 
+        public static function grid($model, $callable)
+        {
+            return \Encore\Admin\Admin::grid($model, $callable);
+        }
+        
+        /**
+         * 
+         *
+         * @param $model
+         * @param \Closure $callable
+         * @return \Encore\Admin\Form @deprecated since v1.6.1
+         * @static 
+         */ 
+        public static function form($model, $callable)
+        {
+            return \Encore\Admin\Admin::form($model, $callable);
+        }
+        
+        /**
+         * Build a tree.
+         *
+         * @param $model
+         * @return \Encore\Admin\Tree 
+         * @static 
+         */ 
+        public static function tree($model, $callable = null)
+        {
+            return \Encore\Admin\Admin::tree($model, $callable);
+        }
+        
+        /**
+         * Build show page.
+         *
+         * @param $model
+         * @param mixed $callable
+         * @return \Encore\Admin\Show 
+         * @deprecated since v1.6.1
+         * @static 
+         */ 
+        public static function show($model, $callable = null)
+        {
+            return \Encore\Admin\Admin::show($model, $callable);
+        }
+        
+        /**
+         * 
+         *
+         * @param \Closure $callable
+         * @return \Encore\Admin\Layout\Content 
+         * @deprecated since v1.6.1
+         * @static 
+         */ 
+        public static function content($callable = null)
+        {
+            return \Encore\Admin\Admin::content($callable);
+        }
+        
+        /**
+         * 
+         *
+         * @param $model
+         * @return mixed 
+         * @static 
+         */ 
+        public static function getModel($model)
+        {
+            return \Encore\Admin\Admin::getModel($model);
+        }
+        
+        /**
+         * Left sider-bar menu.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function menu()
+        {
+            return \Encore\Admin\Admin::menu();
+        }
+        
+        /**
+         * Get admin title.
+         *
+         * @return \Config 
+         * @static 
+         */ 
+        public static function title()
+        {
+            return \Encore\Admin\Admin::title();
+        }
+        
+        /**
+         * Get current login user.
+         *
+         * @return mixed 
+         * @static 
+         */ 
+        public static function user()
+        {
+            return \Encore\Admin\Admin::user();
+        }
+        
+        /**
+         * Set navbar.
+         *
+         * @param \Closure|null $builder
+         * @return \Encore\Admin\Navbar 
+         * @static 
+         */ 
+        public static function navbar($builder = null)
+        {
+            return \Encore\Admin\Admin::navbar($builder);
+        }
+        
+        /**
+         * Get navbar object.
+         *
+         * @return \Encore\Admin\Widgets\Navbar 
+         * @static 
+         */ 
+        public static function getNavbar()
+        {
+            return \Encore\Admin\Admin::getNavbar();
+        }
+        
+        /**
+         * Register the auth routes.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function registerAuthRoutes()
+        {
+            \Encore\Admin\Admin::registerAuthRoutes();
+        }
+        
+        /**
+         * Extend a extension.
+         *
+         * @param string $name
+         * @param string $class
+         * @return void 
+         * @static 
+         */ 
+        public static function extend($name, $class)
+        {
+            \Encore\Admin\Admin::extend($name, $class);
+        }
+        
+        /**
+         * 
+         *
+         * @param callable $callback
+         * @static 
+         */ 
+        public static function booting($callback)
+        {
+            return \Encore\Admin\Admin::booting($callback);
+        }
+        
+        /**
+         * 
+         *
+         * @param callable $callback
+         * @static 
+         */ 
+        public static function booted($callback)
+        {
+            return \Encore\Admin\Admin::booted($callback);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function disablePjax()
+        {
+            return \Encore\Admin\Admin::disablePjax();
+        }
+        
+        /**
+         * Add css or get all css.
+         *
+         * @param null $css
+         * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void 
+         * @static 
+         */ 
+        public static function css($css = null)
+        {
+            return \Encore\Admin\Admin::css($css);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $css
+         * @return array|void 
+         * @static 
+         */ 
+        public static function baseCss($css = null)
+        {
+            return \Encore\Admin\Admin::baseCss($css);
+        }
+        
+        /**
+         * Add js or get all js.
+         *
+         * @param null $js
+         * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void 
+         * @static 
+         */ 
+        public static function js($js = null)
+        {
+            return \Encore\Admin\Admin::js($js);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $js
+         * @return array|void 
+         * @static 
+         */ 
+        public static function baseJs($js = null)
+        {
+            return \Encore\Admin\Admin::baseJs($js);
+        }
+        
+        /**
+         * 
+         *
+         * @param string $script
+         * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void 
+         * @static 
+         */ 
+        public static function script($script = '')
+        {
+            return \Encore\Admin\Admin::script($script);
+        }
+        
+        /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function jQuery()
+        {
+            return \Encore\Admin\Admin::jQuery();
+        }
+         
+    }
+ 
+}
+
+namespace Laravel\Socialite\Facades { 
+
+    /**
+     * 
+     *
+     * @see \Laravel\Socialite\SocialiteManager
+     */ 
+    class Socialite {
+        
+        /**
+         * Get a driver instance.
+         *
+         * @param string $driver
+         * @return mixed 
+         * @static 
+         */ 
+        public static function with($driver)
+        {
+            return \Laravel\Socialite\SocialiteManager::with($driver);
+        }
+        
+        /**
+         * Build an OAuth 2 provider instance.
+         *
+         * @param string $provider
+         * @param array $config
+         * @return \Laravel\Socialite\Two\AbstractProvider 
+         * @static 
+         */ 
+        public static function buildProvider($provider, $config)
+        {
+            return \Laravel\Socialite\SocialiteManager::buildProvider($provider, $config);
+        }
+        
+        /**
+         * Format the server configuration.
+         *
+         * @param array $config
+         * @return array 
+         * @static 
+         */ 
+        public static function formatConfig($config)
+        {
+            return \Laravel\Socialite\SocialiteManager::formatConfig($config);
+        }
+        
+        /**
+         * Get the default driver name.
+         *
+         * @throws \InvalidArgumentException
+         * @return string 
+         * @static 
+         */ 
+        public static function getDefaultDriver()
+        {
+            return \Laravel\Socialite\SocialiteManager::getDefaultDriver();
+        }
+        
+        /**
+         * Get a driver instance.
+         *
+         * @param string $driver
+         * @return mixed 
+         * @static 
+         */ 
+        public static function driver($driver = null)
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Laravel\Socialite\SocialiteManager::driver($driver);
+        }
+        
+        /**
+         * Register a custom driver creator Closure.
+         *
+         * @param string $driver
+         * @param \Closure $callback
+         * @return $this 
+         * @static 
+         */ 
+        public static function extend($driver, $callback)
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Laravel\Socialite\SocialiteManager::extend($driver, $callback);
+        }
+        
+        /**
+         * Get all of the created "drivers".
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getDrivers()
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Laravel\Socialite\SocialiteManager::getDrivers();
+        }
+         
+    }
+ 
+}
+
 
 namespace  { 
 
@@ -15126,6 +15989,14 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class GraphQL extends \Folklore\GraphQL\Support\Facades\GraphQL {}
+
+    class Clockwork extends \Clockwork\Support\Laravel\Facade {}
+
+    class Admin extends \Encore\Admin\Facades\Admin {}
+
+    class Socialite extends \Laravel\Socialite\Facades\Socialite {}
  
 }
 
