@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50f752ebc2089e9e867c3308c1175c08",
+    "content-hash": "c13ae33a2f13ff1741a6391e3674095b",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -1899,6 +1899,62 @@
                 "php"
             ],
             "time": "2018-09-18T07:03:24+00:00"
+        },
+        {
+            "name": "pack-wlt2/pack-wlt",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wlt5870/pack.git",
+                "reference": "58759f28dd624dff99065d0fd0ea80d5db8d1f5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wlt5870/pack/zipball/58759f28dd624dff99065d0fd0ea80d5db8d1f5f",
+                "reference": "58759f28dd624dff99065d0fd0ea80d5db8d1f5f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PackWlt\\PackWltServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackWlt\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "wlt",
+                    "email": "wlt5870@163.com",
+                    "homepage": "https://github.com/wlt5870/pack",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "wlt"
+            ],
+            "time": "2018-10-12T06:59:06+00:00"
         },
         {
             "name": "paragonie/random_compat",

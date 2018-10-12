@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/t', function () {
+    //dd(wlt_echo());
     Cache::add('key1', 90, 56);
     dd(Cache::has('key1'));
     exit;

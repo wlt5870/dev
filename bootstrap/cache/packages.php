@@ -85,6 +85,13 @@
       0 => 'Carbon\\Laravel\\ServiceProvider',
     ),
   ),
+  'pack-wlt2/pack-wlt' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'PackWlt\\PackWltServiceProvider',
+    ),
+  ),
   'socialiteproviders/manager' => 
   array (
     'providers' => 
