@@ -1,20 +1,9 @@
 <?php return array (
-  'barryvdh/laravel-ide-helper' => 
+  'nesbot/carbon' => 
   array (
     'providers' => 
     array (
-      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
-    ),
-  ),
-  'encore/laravel-admin' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Encore\\Admin\\AdminServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Admin' => 'Encore\\Admin\\Facades\\Admin',
+      0 => 'Carbon\\Laravel\\ServiceProvider',
     ),
   ),
   'fideloper/proxy' => 
@@ -46,6 +35,17 @@
       'Clockwork' => 'Clockwork\\Support\\Laravel\\Facade',
     ),
   ),
+  'encore/laravel-admin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Encore\\Admin\\AdminServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Admin' => 'Encore\\Admin\\Facades\\Admin',
+    ),
+  ),
   'laravel-admin-ext/helpers' => 
   array (
     'providers' => 
@@ -60,6 +60,34 @@
       0 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
     ),
   ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'pack-wlt2/pack-wlt' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'PackWlt\\PackWltServiceProvider',
+    ),
+  ),
+  'wangju/ding-notice' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'DingNotice\\DingNoticeServiceProvider',
+    ),
+  ),
+  'barryvdh/laravel-ide-helper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    ),
+  ),
   'laravel/socialite' => 
   array (
     'providers' => 
@@ -71,39 +99,11 @@
       'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
-  'laravel/tinker' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'nesbot/carbon' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Carbon\\Laravel\\ServiceProvider',
-    ),
-  ),
-  'pack-wlt2/pack-wlt' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'PackWlt\\PackWltServiceProvider',
-    ),
-  ),
   'socialiteproviders/manager' => 
   array (
     'providers' => 
     array (
       0 => 'SocialiteProviders\\Manager\\ServiceProvider',
-    ),
-  ),
-  'wangju/ding-notice' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'DingNotice\\DingNoticeServiceProvider',
     ),
   ),
 );

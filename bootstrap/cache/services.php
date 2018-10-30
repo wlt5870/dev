@@ -23,19 +23,19 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
-    23 => 'Encore\\Admin\\AdminServiceProvider',
-    24 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    25 => 'Folklore\\GraphQL\\ServiceProvider',
-    26 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
+    22 => 'Carbon\\Laravel\\ServiceProvider',
+    23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    24 => 'Folklore\\GraphQL\\ServiceProvider',
+    25 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
+    26 => 'Encore\\Admin\\AdminServiceProvider',
     27 => 'Encore\\Admin\\Helpers\\HelpersServiceProvider',
     28 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
-    29 => 'Laravel\\Socialite\\SocialiteServiceProvider',
-    30 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    31 => 'Carbon\\Laravel\\ServiceProvider',
-    32 => 'PackWlt\\PackWltServiceProvider',
-    33 => 'SocialiteProviders\\Manager\\ServiceProvider',
-    34 => 'DingNotice\\DingNoticeServiceProvider',
+    29 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    30 => 'PackWlt\\PackWltServiceProvider',
+    31 => 'DingNotice\\DingNoticeServiceProvider',
+    32 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    33 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    34 => 'SocialiteProviders\\Manager\\ServiceProvider',
     35 => 'App\\Providers\\AppServiceProvider',
     36 => 'App\\Providers\\AuthServiceProvider',
     37 => 'App\\Providers\\EventServiceProvider',
@@ -57,13 +57,13 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'Encore\\Admin\\AdminServiceProvider',
+    10 => 'Carbon\\Laravel\\ServiceProvider',
     11 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     12 => 'Folklore\\GraphQL\\ServiceProvider',
     13 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
-    14 => 'Encore\\Admin\\Helpers\\HelpersServiceProvider',
-    15 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
-    16 => 'Carbon\\Laravel\\ServiceProvider',
+    14 => 'Encore\\Admin\\AdminServiceProvider',
+    15 => 'Encore\\Admin\\Helpers\\HelpersServiceProvider',
+    16 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
     17 => 'PackWlt\\PackWltServiceProvider',
     18 => 'DingNotice\\DingNoticeServiceProvider',
     19 => 'App\\Providers\\AppServiceProvider',
@@ -172,10 +172,10 @@
     'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
+    'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
     'command.ide-helper.generate' => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     'command.ide-helper.models' => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     'Laravel\\Socialite\\Contracts\\Factory' => 'SocialiteProviders\\Manager\\ServiceProvider',
-    'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
   ),
   'when' => 
   array (
@@ -215,13 +215,13 @@
     'Illuminate\\Validation\\ValidationServiceProvider' => 
     array (
     ),
+    'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
     'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider' => 
     array (
     ),
     'Laravel\\Socialite\\SocialiteServiceProvider' => 
-    array (
-    ),
-    'Laravel\\Tinker\\TinkerServiceProvider' => 
     array (
     ),
     'SocialiteProviders\\Manager\\ServiceProvider' => 
