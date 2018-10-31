@@ -43,7 +43,8 @@
     39 => 'Bugsnag\\BugsnagLaravel\\BugsnagLaravelServiceProvider',
     40 => 'Folklore\\GraphQL\\ServiceProvider',
     41 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
-    42 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    42 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
+    43 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
   ),
   'eager' => 
   array (
@@ -73,6 +74,7 @@
     23 => 'Bugsnag\\BugsnagLaravel\\BugsnagLaravelServiceProvider',
     24 => 'Folklore\\GraphQL\\ServiceProvider',
     25 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
+    26 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
   ),
   'deferred' => 
   array (

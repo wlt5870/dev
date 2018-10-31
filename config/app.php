@@ -179,6 +179,7 @@ return [
         Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider::class,
         Folklore\GraphQL\ServiceProvider::class,
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
 
     ],
@@ -231,6 +232,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'GraphQL' => Folklore\GraphQL\Support\Facades\GraphQL::class,
         'Clockwork' => Clockwork\Support\Laravel\Facade::class,
+        'JwtAuth' => \Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JwtAuthFactory' => \Tymon\JWTAuth\Facades\JWTFactory::class,
     ],
 
 ];
