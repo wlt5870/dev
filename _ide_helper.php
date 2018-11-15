@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.5.43 on 2018-10-31 18:17:20.
+ * Generated for Laravel 5.5.43 on 2018-11-15 18:07:53.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -5782,7 +5782,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function debug($message, $context = array())
         {
-            return \Monolog\Logger::debug($message, $context);
+            return \Monolog\Logger::addDebug($message, $context);
         }
         
         /**
@@ -5795,7 +5795,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function info($message, $context = array())
         {
-            return \Monolog\Logger::info($message, $context);
+            return \Monolog\Logger::addInfo($message, $context);
         }
         
         /**
@@ -5808,7 +5808,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function notice($message, $context = array())
         {
-            return \Monolog\Logger::notice($message, $context);
+            return \Monolog\Logger::addNotice($message, $context);
         }
         
         /**
@@ -5821,7 +5821,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function warning($message, $context = array())
         {
-            return \Monolog\Logger::warning($message, $context);
+            return \Monolog\Logger::addWarning($message, $context);
         }
         
         /**
@@ -5834,7 +5834,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function error($message, $context = array())
         {
-            return \Monolog\Logger::error($message, $context);
+            return \Monolog\Logger::addError($message, $context);
         }
         
         /**
@@ -5847,7 +5847,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function critical($message, $context = array())
         {
-            return \Monolog\Logger::critical($message, $context);
+            return \Monolog\Logger::addCritical($message, $context);
         }
         
         /**
@@ -5860,7 +5860,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function alert($message, $context = array())
         {
-            return \Monolog\Logger::alert($message, $context);
+            return \Monolog\Logger::addAlert($message, $context);
         }
         
         /**
@@ -5873,7 +5873,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function emergency($message, $context = array())
         {
-            return \Monolog\Logger::emergency($message, $context);
+            return \Monolog\Logger::addEmergency($message, $context);
         }
         
         /**
@@ -7355,8 +7355,6 @@ namespace Illuminate\Support\Facades {
     /**
      * 
      *
-     * @see \Illuminate\Redis\RedisManager
-     * @see \Illuminate\Contracts\Redis\Factory
      */ 
     class Redis {
         
@@ -9356,7 +9354,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function validate($rules, $params = null)
         {
-            return \Illuminate\Http\Request::validate($rules, $params);
+            return \Illuminate\Http\Request::Illuminate\Foundation\Providers\{closure}($rules, $params);
         }
          
     }
@@ -14210,6 +14208,136 @@ namespace Laravel\Socialite\Facades {
  
 }
 
+namespace Overtrue\LaravelPinyin\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class Pinyin {
+        
+        /**
+         * Convert string to pinyin.
+         *
+         * @param string $string
+         * @param int $option
+         * @return array 
+         * @static 
+         */ 
+        public static function convert($string, $option = 4096)
+        {
+            return \Overtrue\Pinyin\Pinyin::convert($string, $option);
+        }
+        
+        /**
+         * Convert string (person name) to pinyin.
+         *
+         * @param string $stringName
+         * @param int $option
+         * @return array 
+         * @static 
+         */ 
+        public static function name($stringName, $option = 16)
+        {
+            return \Overtrue\Pinyin\Pinyin::name($stringName, $option);
+        }
+        
+        /**
+         * Return a pinyin permalink from string.
+         *
+         * @param string $string
+         * @param string $delimiter
+         * @param int $option
+         * @return string 
+         * @static 
+         */ 
+        public static function permalink($string, $delimiter = '-', $option = 4096)
+        {
+            return \Overtrue\Pinyin\Pinyin::permalink($string, $delimiter, $option);
+        }
+        
+        /**
+         * Return first letters.
+         *
+         * @param string $string
+         * @param string $delimiter
+         * @param int $option
+         * @return string 
+         * @static 
+         */ 
+        public static function abbr($string, $delimiter = '', $option = 4096)
+        {
+            return \Overtrue\Pinyin\Pinyin::abbr($string, $delimiter, $option);
+        }
+        
+        /**
+         * Chinese phrase to pinyin.
+         *
+         * @param string $string
+         * @param string $delimiter
+         * @param int $option
+         * @return string 
+         * @static 
+         */ 
+        public static function phrase($string, $delimiter = '', $option = 4096)
+        {
+            return \Overtrue\Pinyin\Pinyin::phrase($string, $delimiter, $option);
+        }
+        
+        /**
+         * Chinese to pinyin sentence.
+         *
+         * @param string $string
+         * @param string $delimiter
+         * @param int $option
+         * @return string 
+         * @static 
+         */ 
+        public static function sentence($string, $delimiter = '', $option = 4)
+        {
+            return \Overtrue\Pinyin\Pinyin::sentence($string, $delimiter, $option);
+        }
+        
+        /**
+         * Loader setter.
+         *
+         * @param \Overtrue\Pinyin\DictLoaderInterface $loader
+         * @return $this 
+         * @static 
+         */ 
+        public static function setLoader($loader)
+        {
+            return \Overtrue\Pinyin\Pinyin::setLoader($loader);
+        }
+        
+        /**
+         * Return dict loader,.
+         *
+         * @return \Overtrue\Pinyin\DictLoaderInterface 
+         * @static 
+         */ 
+        public static function getLoader()
+        {
+            return \Overtrue\Pinyin\Pinyin::getLoader();
+        }
+        
+        /**
+         * 
+         *
+         * @param int $option
+         * @param int $check
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasOption($option, $check)
+        {
+            return \Overtrue\Pinyin\Pinyin::hasOption($option, $check);
+        }
+         
+    }
+ 
+}
+
 
 namespace  { 
 
@@ -16362,6 +16490,8 @@ namespace  {
     class Admin extends \Encore\Admin\Facades\Admin {}
 
     class Socialite extends \Laravel\Socialite\Facades\Socialite {}
+
+    class Pinyin extends \Overtrue\LaravelPinyin\Facades\Pinyin {}
  
 }
 
