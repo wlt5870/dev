@@ -1,9 +1,20 @@
 <?php return array (
-  'nesbot/carbon' => 
+  'barryvdh/laravel-ide-helper' => 
   array (
     'providers' => 
     array (
-      0 => 'Carbon\\Laravel\\ServiceProvider',
+      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    ),
+  ),
+  'encore/laravel-admin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Encore\\Admin\\AdminServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Admin' => 'Encore\\Admin\\Facades\\Admin',
     ),
   ),
   'fideloper/proxy' => 
@@ -35,17 +46,6 @@
       'Clockwork' => 'Clockwork\\Support\\Laravel\\Facade',
     ),
   ),
-  'encore/laravel-admin' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Encore\\Admin\\AdminServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Admin' => 'Encore\\Admin\\Facades\\Admin',
-    ),
-  ),
   'laravel-admin-ext/helpers' => 
   array (
     'providers' => 
@@ -60,34 +60,6 @@
       0 => 'Encore\\Admin\\LogViewer\\LogViewerServiceProvider',
     ),
   ),
-  'laravel/tinker' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'pack-wlt2/pack-wlt' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'PackWlt\\PackWltServiceProvider',
-    ),
-  ),
-  'wangju/ding-notice' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'DingNotice\\DingNoticeServiceProvider',
-    ),
-  ),
-  'barryvdh/laravel-ide-helper' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
-    ),
-  ),
   'laravel/socialite' => 
   array (
     'providers' => 
@@ -97,6 +69,38 @@
     'aliases' => 
     array (
       'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
+    ),
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
+  'overtrue/laravel-pinyin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Overtrue\\LaravelPinyin\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Pinyin' => 'Overtrue\\LaravelPinyin\\Facades\\Pinyin',
+    ),
+  ),
+  'pack-wlt2/pack-wlt' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'PackWlt\\PackWltServiceProvider',
     ),
   ),
   'socialiteproviders/manager' => 
@@ -111,6 +115,13 @@
     'providers' => 
     array (
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'wangju/ding-notice' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'DingNotice\\DingNoticeServiceProvider',
     ),
   ),
 );
