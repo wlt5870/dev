@@ -35,6 +35,13 @@
       'GraphQL' => 'Folklore\\GraphQL\\Support\\Facades\\GraphQL',
     ),
   ),
+  'hhxsv5/laravel-s' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Hhxsv5\\LaravelS\\Illuminate\\LaravelSServiceProvider',
+    ),
+  ),
   'itsgoingd/clockwork' => 
   array (
     'providers' => 
@@ -126,6 +133,20 @@
     'providers' => 
     array (
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'swooletw/laravel-swoole' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'SwooleTW\\Http\\LaravelServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Server' => 'SwooleTW\\Http\\Server\\Facades\\Server',
+      'Table' => 'SwooleTW\\Http\\Server\\Facades\\Table',
+      'Room' => 'SwooleTW\\Http\\Websocket\\Facades\\Room',
+      'Websocket' => 'SwooleTW\\Http\\Websocket\\Facades\\Websocket',
     ),
   ),
   'wangju/ding-notice' => 

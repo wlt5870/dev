@@ -11,6 +11,7 @@
         "encore/laravel-admin": "^1.6",
         "fideloper/proxy": "~3.3",
         "folklore/graphql": "^1.1",
+        "hhxsv5/laravel-s": "~3.0",
         "itsgoingd/clockwork": "^3.0",
         "laravel-admin-ext/helpers": "^1.1",
         "laravel-admin-ext/log-viewer": "^1.0",
@@ -21,6 +22,7 @@
         "pack-wlt2/pack-wlt": "^1.0",
         "predis/predis": "^1.1",
         "spatie/laravel-permission": "^2.23",
+        "swooletw/laravel-swoole": "^2.5",
         "tymon/jwt-auth": "@dev",
         "wangju/ding-notice": "^1.0"
     },
