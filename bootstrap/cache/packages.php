@@ -96,6 +96,17 @@
       'Pinyin' => 'Overtrue\\LaravelPinyin\\Facades\\Pinyin',
     ),
   ),
+  'overtrue/laravel-wechat' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Overtrue\\LaravelWeChat\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'EasyWeChat' => 'Overtrue\\LaravelWeChat\\Facade',
+    ),
+  ),
   'pack-wlt2/pack-wlt' => 
   array (
     'providers' => 

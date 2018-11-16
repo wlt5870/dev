@@ -16,27 +16,26 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/t', function () {
-    //dd(wlt_echo());
-    $pinyin = app('pinyin');
-    echo $pinyin->sentence('带着希望去旅行，比到达终点更美好');
-    echo pinyin('带着希望去旅行，比到达终点更美好');
-    dd();
-    Cache::add('key1', 90, 56);
-    dd(Cache::has('key1'));
-    exit;
-    //clock()->startEvent('event_name', 'LaravelAcademy.org');
-    //ding()->at(["15517515025"],true)
-    //    ->text("我就是我,@15517515025 是不一样的烟火");
-    $title = '杭州天气';
-    $markdown = "#### 杭州天气  \n ".
-        "> 9度，@1825718XXXX 西北风1级，空气良89，相对温度73%\n\n ".
-        "> ![screenshot](http://i01.lw.aliimg.com/media/lALPBbCc1ZhJGIvNAkzNBLA_1200_588.png)\n".
-        "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) ";
-
-    ding()->markdown($title,$markdown);
-});
+//Route::get('/t', function () {
+//    //dd(wlt_echo());
+//    $pinyin = app('pinyin');
+//    echo $pinyin->sentence('带着希望去旅行，比到达终点更美好');
+//    echo pinyin('带着希望去旅行，比到达终点更美好');
+//    dd();
+//    Cache::add('key1', 90, 56);
+//    dd(Cache::has('key1'));
+//    exit;
+//    //clock()->startEvent('event_name', 'LaravelAcademy.org');
+//    //ding()->at(["15517515025"],true)
+//    //    ->text("我就是我,@15517515025 是不一样的烟火");
+//    $title = '杭州天气';
+//    $markdown = "#### 杭州天气  \n ".
+//        "> 9度，@1825718XXXX 西北风1级，空气良89，相对温度73%\n\n ".
+//        "> ![screenshot](http://i01.lw.aliimg.com/media/lALPBbCc1ZhJGIvNAkzNBLA_1200_588.png)\n".
+//        "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) ";
+//
+//    ding()->markdown($title,$markdown);
+//});
 
 Auth::routes();
 
